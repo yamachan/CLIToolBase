@@ -14,7 +14,7 @@ public class CLIMain {
 
 		// add options
 		options.addOption("t", "time", false, "display current time");
-		options.addOption("h", "help", false, "display current time");
+		options.addOption("h", "help", false, "display help message");
 		
 		CommandLineParser parser = new DefaultParser();
 		CommandLine cmd = parser.parse(options, args);
