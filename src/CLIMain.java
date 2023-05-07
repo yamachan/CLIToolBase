@@ -11,15 +11,15 @@ public class CLIMain {
 		Options options = new Options();
 
 		// add t option
-		options.addOption("t", false, "display current time");
+		options.addOption("t", "time", false, "display current time");
 		
 		CommandLineParser parser = new DefaultParser();
 		CommandLine cmd = parser.parse(options, args);
 
 		if(cmd.hasOption("t")) {
-			System.out.println("Sample output with t option.");		
+			System.out.println("Sample output with [-t|--time] option.");		
 		} else {
-			System.out.println("Sample output without t option.");		
+			System.out.println("Sample output without [-t|--time] option.");		
 		}
 	}
 }
